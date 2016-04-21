@@ -31,12 +31,18 @@ function processListData(data, listContent) {
 				line += "<div class=\"row\">";
 
 			line += "<div class=\"game\">";
-			line += "<div class=\"picture\" style=\"background-image: url('img/" + data[i].file + "');\"></div>";
-			line += "<div class=\"information radius\">";
+			line += "<div class=\"game-container radius\"><div>";
+			if (data[i].stock == 0)
+				line += "<div class=\"picture sold-out\"></div>";
+			line += "<div class=\"picture ";
+			if (data[i].stock == 0)
+				line += "gray";
+			line += "\" style=\"background-image: url('img/" + data[i].file + "');\"></div>";
+			line += "</div><div class=\"information radius\">";
 			line += "<h4 class=\"title\">" + data[i].title + "</h4>";
 			line += "Stock: " + data[i].stock + "</br >";
 			line += "Price: $" + data[i].price + "</div>";
-			line += "</div>";
+			line += "</div></div>";
 
 			if (i % 4 == 3) // close the row
 				line += "</div>";
