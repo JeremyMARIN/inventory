@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Best Video Games eShop</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body onload="init();">
+		<div id="menu" class="text-centered button grow">
+			<a href="index.html"><h3><img src="img/back.png" alt="Back image" />Go back</h3></a>
+		</div>
+
+		<header id="header">
+			<div class="panel round">
+				<h2 class="text-centered">Administration</h2>
+			</div>
+		</header>
+
+		<div id="content">
+			<form action="inventory.php" method="post">
+				<div id="list" class="panel round">
+				
+				</div>
+				<div class="action-container">
+					<button type="submit" class="round green grow">Submit</button>
+					<button type="reset" class="round orange grow">Reset</button>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/admin.js"></script>
+	</body>
+</html>

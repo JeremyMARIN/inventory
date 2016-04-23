@@ -2,29 +2,33 @@ h2 {
 	margin: 0;
 }
 
-p {
-	margin: 0 0 8px 0;
-}
-
 body {
 	background-image: url("../img/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-form {
-	line-height: 2em;
+button {
+	color: white;
+	display: inline-block;
+	font-size: 1.2em;
+	text-align: center;
+	border: none;
+	padding: 16px 16px;
 }
 
-button {
-	font-size: 1.2em;
-	padding: 0 16px;
+input {
+	float: right;
+	border-width: 1px;
+}
+label {
+	margin-top: 20px;
 }
 
 table {
+	color: white;
 	width: 50%;
 	margin: auto;
-	color: white;
 }
 td {
 	text-align: center;
@@ -55,6 +59,31 @@ a:visited {
 	background-color: rgba(60, 60, 60, 0.8);
 	margin: 8px;
 	padding: 16px;
+}
+.button {
+	border-radius: 20px;
+	background-color: rgba(120, 120, 120, 0.8);
+}
+.button a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+.button img {
+	width: 12%;
+	margin-right: 4%;
+	vertical-align: middle;
+}
+.button:hover {
+	background-color: rgba(130, 130, 130, 0.8);
+}
+
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.1);
 }
 
 .text-centered {
@@ -125,6 +154,32 @@ a:visited {
 	max-height: 40px;
 }
 
+.action-container {
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	display: table;
+}
+.action-container button {
+	width: 25%;
+	display: table-cell;
+	margin-right: 12.5%;
+	margin-left: 12.5%;
+}
+
+.green {
+	background-color: rgba(76, 175, 80, 0.9);
+}
+.green:hover {
+	background-color: rgba(86, 185, 90, 0.9);
+}
+.orange {
+	background-color: rgba(255, 153, 0, 0.9);
+}
+.orange:hover {
+	background-color: rgba(255, 163, 10, 0.9);
+}
+
 
 #header, #content {
 	margin-left: auto;
@@ -135,4 +190,11 @@ a:visited {
 #content {
 	height: 60%;
 	margin-top: 20px;
+}
+
+#menu {
+	width: 12%;
+	top: 2%;
+	right: 2%;
+	position: fixed;
 }
